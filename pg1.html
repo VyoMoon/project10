@@ -1,0 +1,138 @@
+<html lang="en">
+<head></head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="section">
+            <div class="top_navbar">
+                <div class="hamburger">
+                    <a href="#">
+                        <i class="fas fa-bars"></i>
+                            <img class="menuicon" src="sidebar.png" alt="Menu">
+                    </a>
+                </div>
+            </div>
+            <div class="container">
+                <h2>Welcome to my HTML course. Here you'll find the main basics of html you need to start your own web-creating journey.</h2>
+                <br>
+                <ul>
+                    <li class="aboutli"><h2>Whats is HTML?</h2>
+                        HTML (HyperText Markup Language) is a markup language that tells web browsers how to structure the web pages you visit. It can be as complicated or as simple as the web developer wants it to be. HTML consists of a series of elements, which you use to enclose, wrap, or mark up different parts of content to make it appear or act in a certain way. The enclosing tags can make content into a hyperlink to connect to another page, italicize words, and so on.
+                    </li>
+                    <li class="aboutli">
+                    <h2>Prerequisites</h2>
+                    Before starting this course, you don't need any previous HTML knowledge, but you should have at least basic familiarity with using computers and using the web passively (i.e., just looking at it and consuming content). You should have a basic work environment set up, and understand how to create and manage files. Both are parts of our Getting started with the web complete beginner's module.
+                    </li>
+
+                    <li class="aboutli">
+                        <h2>Modules</h2>
+                        I decided to cover the most of my html experience in the 6 modules listed below
+                    </li>
+                <li class="aboutli"><a href="basictags.html"><h3>Basic tags</h3></a>
+
+                HTML is a markup language so it's mostly about various tags and their meanings. This part covers the absolute basics of HTML, to get you started — we define elements, attributes, and other important terms, and show where they fit in the language. We will learn how an HTML element is structured, and explain other important basic language features.
+                </li>
+
+                <li class="aboutli"><a href="structure.html"><h3> HTML Structure</h3></a>
+                Structure of your your html code is by far the most important thing in web-creating. If your code will look messy, your website will look messy, moreover it will be hard for you to understand your own code. we will learn how a typical HTML page is structured.
+                </li>
+
+                <li class="aboutli"><a href="visuals.html"><h3>Visuals in HTML</h3></a>
+
+                    In the beginning, the Web was just text, and it was really quite boring. Fortunately, it wasn't too long before the ability to embed images (and other more interesting types of content) inside web pages was added. There are other types of multimedia to consider, but it is logical to start with the humble "img" element, used to embed a simple image in a webpage.
+                </li>
+                <li class="aboutli"><a href="tables.html"><h3>HTML Tables</h3></a>
+                    A very common task in HTML is structuring tabular data, and it has a number of elements and attributes for just this purpose. Coupled with a little CSS for styling, HTML makes it easy to display tables of information on the web such as your school lesson plan, the timetable at your local swimming pool, or statistics about your favorite dinosaurs or football team. This module takes you through all you need to know about structuring tabular data using HTML.
+                </li>
+
+                <li class="aboutli"><a href="forms.html"><h3>HTML Forms</h3></a>
+                    This module provides a series of articles that will help you master the essentials of web forms. Web forms are a very powerful tool for interacting with users — most commonly they are used for collecting data from users, or allowing them to control a user interface. However, for historical and technical reasons it's not always obvious how to use them to their full potential. In the articles listed below, we'll cover all the essential aspects of Web forms including marking up their HTML structure.
+                </li>
+
+                <li class="aboutli"><a href="endc.html"><h3>End Course</h3></a>
+                    Some important details we couldn't cover in the modules above.
+                </li>
+
+                <li class="aboutli"><a href="nextc.html"><h3>What's Next</h3></a>
+                    Here, we have only really scratched the surface of HTML. To find out more, i listed some useful links in this module.
+                </li>
+                </ul>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="profile">
+                <h3>HTML Is Easy</h3>
+               
+            </div>
+            <ul>
+                <li>
+                    <a href="#" class="active">
+                        <span class="icon"><i class="fas fa-home"></i></span>
+                        <span class="item">About</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="basictags.html">
+                        <span class="icon"><i class="fas fa-desktop"></i></span>
+                        <span class="item">Basic HTML Tags</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="structure.html">
+                        <span class="icon"><i class="fas fa-user-friends"></i></span>
+                        <span class="item">HTML Structure</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="visuals.html">
+                        <span class="icon"><i class="fas fa-tachometer-alt"></i></span>
+                        <span class="item">Visual content in HTML</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="tables.html">
+                        <span class="icon"><i class="fas fa-database"></i></span>
+                        <span class="item">HTML tables</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="forms.html">
+                        <span class="icon"><i class="fas fa-chart-line"></i></span>
+                        <span class="item">HTML Forms</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="endc.html">
+                        <span class="icon"><i class="fas fa-user-shield"></i></span>
+                        <span class="item">end course</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="nextc.html">
+                        <span class="icon"><i class="fas fa-cog"></i></span>
+                        <span class="item">What's next</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        var hamburger = document.querySelector(".hamburger");
+    hamburger.addEventListener("click", function(){
+        document.querySelector("body").classList.toggle("active");
+    })
+    </script>
+</body>
+<footer>
+
+</footer>
+</html>

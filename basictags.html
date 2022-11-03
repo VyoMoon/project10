@@ -1,0 +1,277 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Steps In HTML</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="section">
+            <div class="top_navbar">
+                <div class="hamburger">
+                    <a href="#">
+                        <i class="fas fa-bars"></i>
+                            <img class="menuicon" src="sidebar.png" alt="Menu">
+                    </a>
+                </div>
+            </div>
+            <div class="container">
+                <ul>
+                    <li class="aboutli"> <h2> The First module, Basic Tags</h2>
+                            At its heart, HTML is a language made up of elements, which can be applied to pieces of text to give them different meaning in a document (Is it a paragraph? Is it a bulleted list? Is it part of a table?), structure a document into logical sections (Does it have a header? Three columns of content? A navigation menu?), and embed content such as images and videos into a page.
+                    </li>
+                <li class="aboutli"><h2> Paragraphs and Headers</h2>
+                    The most basic and easy tags in building websites. Lets take a look at the first tag below. <br>
+                    If we want the text to stand by itself, we could specify that it is a paragraph by enclosing it with <span class="el"><span class="element">&lt;</span>p<span class="element">&gt;</span></span> element:
+
+                    <div class="excon">
+                        <code class="codeex">
+                            <span>
+                                    <span class="element">&lt;</span><span class="tag">p</span><span class="element">&gt;</span></span>This is a paragraph<span><span class="element">&lt;/</span><span class="tag">p</span><span class="element">&gt;</span></span>
+                                </code>
+                    </div>
+
+                    The output of this code will be:
+
+                    <div class="rescon">
+                        This is a paragraph
+                    </div>
+                    <ol>
+                    Let's further explore our paragraph element from the previous section:
+                    <br>
+                    <br>
+                    <img class="struct" src="struct.png" alt="structure png">
+                    <br><br>
+
+                    <li>The opening tag: This consists of the name of the element (in this example, p for paragraph), wrapped in opening and closing angle brackets. This opening tag marks where the element begins or starts to take effect. In this example, it precedes the start of the paragraph text.</li>
+<li>The content: This is the content of the element. In this example, it is the paragraph text.</li>
+<li>The closing tag: This is the same as the opening tag, except that it includes a forward slash before the element name. This marks where the element ends. Failing to include a closing tag is a common beginner error that can produce peculiar results.</li></ol></li>
+                <li class="aboutli"><h2> Nesting</h2>
+                    You can put elements inside other elements too — this is called nesting. If we wanted to state that this is REAL paragraph, we could wrap the word "parapraph" in a <span class="el"><span class="element">&lt;</span>strong<span class="element">&gt;</span></span> element, which means that the word is to be strongly emphasized:
+
+                    <div class="excon">
+                        <code class="codeex">
+                            <span>
+                                    <span class="element">&lt;</span><span class="tag">p</span><span class="element">&gt;</span></span>This is a <span class="element">&lt;</span><span class="tag">strong</span><span class="element">&gt;</span>paragraph<span class="element">&lt;/</span><span class="tag">strong</span><span class="element">&gt;</span><span><span class="element">&lt;/</span><span class="tag">p</span><span class="element">&gt;</span></span>
+                                </code>
+                    </div>
+
+                    The output of this code will be:
+                    <div class="rescon">
+                        <span class="dfont">This is a <strong class="dfont">paragraph</strong></span>
+                    </div>
+
+                    You do however need to make sure that your elements are properly nested. In the example above, we opened the <span class="el"><span class="element">&lt;</span>p<span class="element">&gt;</span></span> element first, then the <span class="el"><span class="element">&lt;</span>strong<span class="element">&gt;</span></span> element; therefore, we have to close the <span class="el"><span class="element">&lt;</span>strong<span class="element">&gt;</span></span> element first, then the <span class="el"><span class="element">&lt;</span>p<span class="element">&gt;</span></span> element.</li>
+                    <li class="aboutli"><h2> Headers</h2>
+                    Another important tag in html is Heading, <span class="el"><span class="element">&lt;</span>h1<span class="element">&gt;</span></span> element. This tag is used to make text bigger and weighter. There are 6 levels of headings: <span class="el"><span class="element">&lt;</span>h1<span class="element">&gt;</span></span> , <span class="el"><span class="element">&lt;</span>h2<span class="element">&gt;</span></span> , <span class="el"><span class="element">&lt;</span>h3<span class="element">&gt;</span></span> , <span class="el"><span class="element">&lt;</span>h4<span class="element">&gt;</span></span> , <span class="el"><span class="element">&lt;</span>h5<span class="element">&gt;</span></span> and <span class="el"><span class="element">&lt;</span>h6<span class="element">&gt;</span></span>
+                    Each element represents a different level of content in the document; <span class="el"><span class="element">&lt;</span>h1<span class="element">&gt;</span></span> represents the main heading, <span class="el"><span class="element">&lt;</span>h2<span class="element">&gt;</span></span> represents subheadings, <span class="el"><span class="element">&lt;</span>h3<span class="element">&gt;</span></span> represents sub-subheadings, and so on.<br>
+                    Example:
+
+                    <div class="excon">
+                        <code class="codeex">
+                            <span>
+                                    <span class="element">&lt;</span><span class="tag">h1</span><span class="element">&gt;</span></span>Water<span class="element">&lt;/</span><span class="tag">h1</span><span class="element">&gt;</span><br>
+                                    <span class="element">&lt;</span><span class="tag">p</span><span class="element">&gt;</span></span> Water <span class="element">&lt;/</span><span class="tag">p</span><span class="element">&gt;</span></span>
+                                </code>
+                    </div>
+
+                    <div class="rescon">
+                        <h1 class="dfont"> Water </h1>
+                        <p class="dfont"> Water </p>
+                    </div>
+
+
+                    </li>
+                    <li class="conli"> <h2>Hyperlinks</h2>
+                    Hyperlinks is one of the most important tag. Hyperlinks allow us to link documents to other documents or resources, link to specific parts of documents, or make apps available at a web address. Almost any web content can be converted to a link so that when clicked or otherwise activated the web browser goes to another web adress.
+                    <br>
+                    <br>
+                    <strong class="big">So how do we create hyperlinks?</strong><br><br>
+                    It is pretty simple. All you need is tag <span class="el"><span class="element">&lt;</span>a<span class="element">&gt;</span></span> and an element <span class=el>href</span>. Lets take a look at them.
+                    <br>
+                    <br>
+                    <ol>
+                        <li> <span class="el"><span class="element">&lt;</span>a<span class="element">&gt;</span></span> tag works just like <span class="el"><span class="element">&lt;</span>p<span class="element">&gt;</span></span> or <span class="el"><span class="element">&lt;</span>h1<span class="element">&gt;</span></span> tags. You write the open tag, your text and the close tag.
+                        </li>
+                        <li> <span class="el">href</span> is an element that you put <strong>inside</strong> of the opening <span class="el"><span class="element">&lt;</span>a<span class="element">&gt;</span></span> tag. you use this element to paste the link for your text.</li>
+                    </ol>
+                    Example of how it would look in code:
+
+                    <div class="excon">
+                        <code class="codeex">
+                            <span>
+                                <span class="element">&lt;</span><span class="tag">a</span> <span class="tag1">href</span>=<span class="tag3">"https://www.youtube.com"</span><span class="element">&gt;</span></span>Youtube<span class="element">&lt;</span><span class="tag">a</span><span class="element">&gt;</span>
+                                    </span>
+                                </code>
+                    </div>
+                    <div class="rescon">
+                        <a id="balls"  href="https://www.youtube.com">Youtube</a>
+                    </div>
+
+                    As you see, the text got underline and blue color. This is a default link style, however you can change it through CSS which you'll learn after html.
+                    </li>
+                    <li class="conli"><h2>Lists</h2>
+                        Now let's turn our attention to lists. Lists are everywhere in life—from your shopping list to the list of directions you subconsciously follow to get to your house every day, to the lists of instructions you are following in these tutorials! Lists are everywhere on the web, too, and we've got three different types to worry about.<br><br>
+                        Every unordered list starts off with a <span class="el"><span class="element">&lt;</span>ul<span class="element">&gt;</span></span> element — this wraps around all the list items.
+                        <br><br>
+                        The last step is to wrap each list item in a <span class="el"><span class="element">&lt;</span>li<span class="element">&gt;</span></span> (list item) element:
+
+                        <div class="excon">
+                            <code class="codeex">
+                                <span>
+                                    <span class="element">&lt;</span><span class="tag">ul</span><span class="element">&gt;</span><br>
+                                    ㅤㅤ<span class="element">&lt;</span><span class="tag">li</span><span class="element">&gt;</span>ListItem1<span class="element">&lt;/</span><span class="tag">li</span><span class="element">&gt;</span><br>
+                                    ㅤㅤ<span class="element">&lt;</span><span class="tag">li</span><span class="element">&gt;</span>ListItem2<span class="element">&lt;/</span><span class="tag">li</span><span class="element">&gt;</span><br>
+                                    ㅤㅤ<span class="element">&lt;</span><span class="tag">li</span><span class="element">&gt;</span>ListItem3<span class="element">&lt;/</span><span class="tag">li</span><span class="element">&gt;</span><br>
+                                    <span class="element">&lt;/</span><span class="tag">ul</span><span class="element">&gt;</span>
+                                        </span>
+                                    </code>
+                        </div>
+                        You wont't see huge difference between list and a bunch of <span class="el"><span class="element">&lt;</span>p<span class="element">&gt;</span></span> elements but when you'll create your own websites this tag will help you sorting elements of your website like blocks.
+                        <div class="rescon">
+                            <ul>
+                                <li>ListItem1</li>
+                                <li>ListItem2</li>
+                                <li>ListItem3</li>
+                            </ul>
+                        </div>
+                        Unordered lists are used to mark up lists of items for which the order of the items doesn't matter.<br><br>
+
+                        <h4>Now lets take a look at ordered list</h4>
+                        ordered list structure is the same but instead of <span class="el"><span class="element">&lt;</span>ul<span class="element">&gt;</span></span> you use <span class="el"><span class="element">&lt;</span>ol<span class="element">&gt;</span></span> element.
+
+                        <div class="excon">
+                            <code class="codeex">
+                                <span>
+                                    <span class="element">&lt;</span><span class="tag">ol</span><span class="element">&gt;</span><br>
+                                    ㅤㅤ<span class="element">&lt;</span><span class="tag">li</span><span class="element">&gt;</span>ListItem1<span class="element">&lt;/</span><span class="tag">li</span><span class="element">&gt;</span><br>
+                                    ㅤㅤ<span class="element">&lt;</span><span class="tag">li</span><span class="element">&gt;</span>ListItem2<span class="element">&lt;/</span><span class="tag">li</span><span class="element">&gt;</span><br>
+                                    ㅤㅤ<span class="element">&lt;</span><span class="tag">li</span><span class="element">&gt;</span>ListItem3<span class="element">&lt;/</span><span class="tag">li</span><span class="element">&gt;</span><br>
+                                    <span class="element">&lt;/</span><span class="tag">ol</span><span class="element">&gt;</span>
+                                        </span>
+                                    </code>
+                                    </div>
+
+                                    <div class="rescon">
+                                        <ol>
+                                            <li>ListItem1</li>
+                                            <li>ListItem2</li>
+                                            <li>ListItem3</li>
+                                        </ol>
+                                    </div>
+                                    Ordered lists are lists in which the order of the items does matter.
+                    </li>
+                    <li class="aboutli"><h2>Some Important Tags</h2>
+                        There are some other tags i'd like to add in "basic" list:
+                        <ol>
+                            <li><span class="el"><span class="element">&lt;</span>em<span class="element">&gt;</span></span> is used to mark up such instances. As well as making the document more interesting to read, these are recognized by screen readers, which can be configured to speak them in a different tone of voice. Browsers style this as italic by default, but you shouldn't use this tag purely to get italic styling (you'll learn about it in CSS courses). </li>
+                            <li><span class="el"><span class="element">&lt;</span>b<span class="element">&gt;</span></span> is used to convey a meaning traditionally conveyed by bold: keywords, product names, lead sentence…</li>
+                            <li><span class="el"><span class="element">&lt;</span>i<span class="element">&gt;</span></span> is used to convey a meaning traditionally conveyed by italic: foreign words, taxonomic designation, technical terms, a thought…</li>
+                            <li><span class="el"><span class="element">&lt;</span>u<span class="element">&gt;</span></span> is used to convey a meaning traditionally conveyed by underline: proper name, misspelling…</li>
+                            <li><span class="el"><span class="element">&lt;</span>br<span class="element">&gt;</span></span> is used to move on the next line.</li>
+                        </ol>
+
+                        <div class="excon">
+                            <code class="codeex">
+                                <span>
+                                    <span class="element">&lt;</span><span class="tag">em</span><span class="element">&gt;</span>Some text<span class="element">&lt;/</span><span class="tag">em</span><span class="element">&gt;</span><span class="element">&lt;</span><span class="tag">br</span><span class="element">&gt;</span><br>
+                                    <span class="element">&lt;</span><span class="tag">i</span><span class="element">&gt;</span>Some second text<span class="element">&lt;/</span><span class="tag">i</span><span class="element">&gt;</span><span class="element">&lt;</span><span class="tag">br</span><span class="element">&gt;</span><br>
+                                    <span class="element">&lt;</span><span class="tag">b</span><span class="element">&gt;</span>Even third text<span class="element">&lt;/</span><span class="tag">b</span><span class="element">&gt;</span><span class="element">&lt;</span><span class="tag">br</span><span class="element">&gt;</span><br>
+                                    <span class="element">&lt;</span><span class="tag">u</span><span class="element">&gt;</span>Fourth text...<span class="element">&lt;/</span><span class="tag">u</span><span class="element">&gt;</span>
+                                        </span>
+                                    </code>
+                                    </div>
+                        <div class="rescon">
+                            <em class="dfont">Some text</em><br>
+                            <i class="dfont">Some Second text</i><br>
+                            <b class="dfont">Even third text</b><br>
+                            <u class="dfont">Fourth text...</u>
+                        </div>
+
+                    </li>
+                    <li class="aboutli"><h2>Summary</h2>
+                        That marks the end of our study of HTML text semantics. Bear in mind that what you have seen during this course is not an exhaustive list of HTML text elements — we wanted to try to cover the essentials, and some of the more common ones you will see in the wild, or at least might find interesting.<br><br>
+                        <strong>Keep in mind that its just a start!</strong>
+                    </li>
+                </ul>
+                <br>
+
+                <a class="prevlink" href="pg1.html">&lt;&lt;About Page</a>
+
+                <a class="nextlink" href="structure.html">Next Course&gt;&gt;</a>
+              </div>
+        </div>
+        <div class="sidebar">
+            <div class="profile">
+                <h3>HTML Is Easy</h3>
+               
+            </div>
+            <ul>
+                <li>
+                    <a href="pg1.html">
+                        <span class="icon"><i class="fas fa-home"></i></span>
+                        <span class="item">About</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="active">
+                        <span class="icon"><i class="fas fa-desktop"></i></span>
+                        <span class="item">Basic HTML Tags</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="structure.html">
+                        <span class="icon"><i class="fas fa-user-friends"></i></span>
+                        <span class="item">HTML Structure</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="visuals.html">
+                        <span class="icon"><i class="fas fa-tachometer-alt"></i></span>
+                        <span class="item">Visual content in HTML</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="tables.html">
+                        <span class="icon"><i class="fas fa-database"></i></span>
+                        <span class="item">HTML tables</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="forms.html">
+                        <span class="icon"><i class="fas fa-chart-line"></i></span>
+                        <span class="item">HTML Forms</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="endc.html">
+                        <span class="icon"><i class="fas fa-user-shield"></i></span>
+                        <span class="item">end course</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="nextc.html">
+                        <span class="icon"><i class="fas fa-cog"></i></span>
+                        <span class="item">What's next</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        var hamburger = document.querySelector(".hamburger");
+    hamburger.addEventListener("click", function(){
+        document.querySelector("body").classList.toggle("active");
+    })
+    </script>
+</body>
+<footer>
+
+</footer>
+</html>

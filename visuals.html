@@ -1,0 +1,218 @@
+<html lang="en">
+<head></head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Visuals</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="section">
+            <div class="top_navbar">
+                <div class="hamburger">
+                    <a href="#">
+                        <i class="fas fa-bars"></i>
+                            <img class="menuicon" src="sidebar.png" alt="Menu">
+                    </a>
+                </div>
+            </div>
+            <div class="container">
+                <ul>
+                    <li class="conli"><h1>Visuals In HTML</h1>
+                        We've looked at a lot of text so far in this course, but the web would be really boring only using text. Let's start looking at how to make the web come alive with more interesting content! This module explores how to use HTML to include multimedia in your web pages, including the different ways that images can be included, and how to embed video, audio, and even entire webpages.
+                    </li>
+                    <li class="conli"><h2>Images</h2>
+                        In order to put a simple image on a web page, we use the <span class="el"><span class="element">&lt;</span>img<span class="element">&gt;</span></span> element. This is a void element (meaning, it cannot have any child content and cannot have an end tag, just like <span class="el"><span class="element">&lt;</span>meta<span class="element">&gt;</span></span> tag) that requires two attributes to be useful: <span class="el">src</span> and <span class="el">alt</span>. The <span class="el">src</span> attribute contains a URL pointing to the image you want to embed in the page. As with the <span class="el">href</span> attribute for <span class="el"><span class="element">&lt;</span>a<span class="element">&gt;</span></span> elements, the <span class="el">src</span> attribute can be a relative URL or an absolute URL. Without a <span class="el">src</span> attribute, an <span class="el"><span class="element">&lt;</span>img<span class="element">&gt;</span></span> element has no image to load.
+                        The <span class="el">alt</span> element would save us if the image couldn't be loaded by any reason. If the image isn't loaded, it would show us the text from <span class="el">alt</span> element.
+
+                        <div class="excon">
+                            <code class="codeex">
+                                <span class="element">&lt;</span><span class="tag">img</span> <span class="tag1">src</span>=<span class="tag3">"banan.jpeg"</span>  <span class="tag1">alt</span>=<span class="tag3">"Banana"</span><span class="element">&gt;</span></span>
+                                    </code>
+                        </div>
+
+                        Without any CSS it will be hard to control size and locaion of the image so don't worry if you can't set these factors at the moment.
+
+                        <div class="rescon">
+                            <img class="imgres" src="banan.jpg" alt="image">
+                        </div>
+
+                        In the example above we use url from our storage but you can also insert the image using the absolute url(be careful using others work or you'll be punished for copyrighting).
+
+                    </li>
+                    <li class="conli"><h2>Video</h2>
+                        Now that we are comfortable with adding simple images to a webpage, the next step is to start adding video players to your HTML.
+                        to add a video you simply need a <span class="el"><span class="element">&lt;</span>video<span class="element">&gt;</span></span> tag. This element is structured with opening and closing tag with some information between them about the video in case it can't be loaded. HTML5 supports only <strong>webm</strong> and <strong>mp4</strong> video files.
+                    
+                        <div class="excon">
+                            <code class="codeex">
+                                <span class="element">&lt;</span><span class="tag">video</span> <span class="tag1">src</span>=<span class="tag3">"monkeswim.mp4"</span> <span class="tag1">controls</span><span class="element">&gt;</span></span><br>
+                                ㅤㅤ <span class="element">&lt;</span><span class="tag">p</span><span class="element">&gt;</span></span>Your browser doesnt support HTML5 videos.<span class="element">&lt;/</span><span class="tag">p</span><span class="element">&gt;</span></span><br>
+                                <span class="element">&lt;/</span><span class="tag">video</span><span class="element">&gt;</span></span>
+                                    </code>
+                        </div>
+
+                        Firstly we put <span class="el"><span class="element">&lt;</span>video<span class="element">&gt;</span></span> tag with video source and <span class="el">controls</span> element in it. <span class="el">controls</span> tells browser to add control buttons for the video player. Secondly the text inside of <span class="el"><span class="element">&lt;</span>video<span class="element">&gt;</span></span> tag that will be shown in case if video can't be loaded. Here is example:
+
+                        <div class="rescon">
+                            <video class="vid" src="monkeswim.mp4" controls muted>
+                                <p>Your browser doesn't support HTML5 videos</p>
+                            </video>
+
+                        </div>
+
+                    </li>
+
+                    <li class="conli"><h2>Audio</h2>
+                        Audio works just like <span class="el"><span class="element">&lt;</span>video<span class="element">&gt;</span></span> tag but we use <span class="el"><span class="element">&lt;</span>audio<span class="element">&gt;</span></span> instead. And for audio we can use only <strong>mp3</strong> and <strong>ogg</strong> audio files.
+
+                        <div class="excon">
+                            <code class="codeex">
+                                <span class="element">&lt;</span><span class="tag">audio</span> <span class="tag1">src</span>=<span class="tag3">"school-rooftop.mp3"</span> <span class="tag1">controls</span><span class="element">&gt;</span></span><br>
+                                ㅤㅤ <span class="element">&lt;</span><span class="tag">p</span><span class="element">&gt;</span></span>Your browser doesnt support HTML5 audios.<span class="element">&lt;/</span><span class="tag">p</span><span class="element">&gt;</span></span><br>
+                                <span class="element">&lt;/</span><span class="tag">audio</span><span class="element">&gt;</span></span>
+                                    </code>
+                        </div>
+
+                        <div class="rescon">
+                            <audio src="school-rooftop.mp3" controls>
+                                <p>Your browser doesn't support HTML5 videos</p>
+                            </audio>
+
+                        </div>
+
+                        Some browsers support only mp3 files and some support only ogg files so if you want to make sure everyone will get access to the content you can insert audio or video in both formats like in example below:
+
+                        <div class="excon">
+                            <code class="codeex">
+                                <span class="element">&lt;</span><span class="tag">audio </span><span class="tag1">controls</span><span class="element">&gt;</span></span><br>
+                                ㅤㅤ<span class="element">&lt;</span><span class="tag">source</span> <span class="tag1">src</span>=<span class="tag3">"audio.mp3"</span><span class="element">&gt;</span></span><br>
+                                ㅤㅤ<span class="element">&lt;</span><span class="tag">source</span> <span class="tag1">src</span>=<span class="tag3">"audio.ogg"</span><span class="element">&gt;</span></span><br>
+                                ㅤㅤ<span class="element">&lt;</span><span class="tag">p</span><span class="element">&gt;</span></span>Your browser doesnt support HTML5 audios.<span class="element">&lt;/</span><span class="tag">p</span><span class="element">&gt;</span></span><br>
+                                <span class="element">&lt;/</span><span class="tag">audio</span><span class="element">&gt;</span></span>
+                                    </code>
+                        </div>
+
+                        This way if browser doesnt support one of the formats it will use the other one. (This works for video files too)
+                    </li>
+                    <li class="conli"><h2>IFrame</h2>
+                        By now you should really be getting the hang of embedding things into your web pages, including images, video and audio. At this point we'd like to take somewhat of a sideways step, looking at some elements that allow you to embed a wide variety of content types into your webpages the <span class="el"><span class="element">&lt;</span>iframe<span class="element">&gt;</span></span> helps embedding other web pages. For example we can add any youtube video in a small window to your website.
+                        
+                        <div class="excon">
+                            <code class="codeex">
+                                <span class="element">&lt;</span><span class="tag">iframe </span>
+                                ㅤㅤ<span class="tag1">width</span>=<span class="tag3">"560"</span><br>
+                                ㅤㅤ<span class="tag1">height</span>=<span class="tag3">"315"</span><br>
+                                ㅤㅤ<span class="tag1">src</span>=<span class="tag3">"https://www.youtube.com/embed/xNgW8M2s3yU"</span><br>
+                                ㅤㅤ<span class="tag1">title</span>=<span class="tag3">"Youtube video player"</span><br>
+                                ㅤㅤ<span class="tag1">frameborder</span>=<span class="tag3">"0"</span><br>
+                                ㅤㅤ<span class="tag1">allow</span>=<span class="tag3">"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"</span><br>
+                                ㅤㅤ<span class="tag1">allowfullscreen</span></span><span class="element">&gt;</span></span><br>
+                                
+                                <span class="element">&lt;/</span><span class="tag">iframe<span class="element">&gt;</span></span>
+                                    </code>
+                        </div>
+                        
+                        To get this code we can simply open any youtube video on PC, click on "Share" button and choose "Embed" option. After that you'll see the <span class="el"><span class="element">&lt;</span>iframe<span class="element">&gt;</span></span> tag with similar to the example data. Copy and paste it to your website to see following result.
+                        <br>
+
+                        <div class="rescon">
+                            <iframe 
+                            width="560" 
+                            height="315" 
+                            src="https://www.youtube.com/embed/xNgW8M2s3yU" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                        </div>
+
+                        Now we can watch this youtube video in a small window on your own website and you can use <span class="el"><span class="element">&lt;</span>iframe<span class="element">&gt;</span></span> for many other options.
+
+                    </li>
+
+                    <li class="conli"><h2>Summary</h2>
+                        The topic of embedding other content in web documents can quickly become very complex, so in this article, we've tried to introduce it in a simple, familiar way that will immediately seem relevant, while still hinting at some of the more advanced features of the involved technologies. To start with, you are unlikely to use embedding for much beyond including third-party content images and videos on your pages. As you become more experienced, however, you are likely to start finding more uses for them.
+
+                    </li>
+                    
+                </ul>
+                <br>
+                    <a class="prevlink" href="structure.html">&lt;&lt;Previuos Course</a>
+
+                <a class="nextlink" href="tables.html">Next Course&gt;&gt;</a>
+        </div>
+        <div class="sidebar">
+            <div class="profile">
+                <h3>HTML Is Easy</h3>
+               
+            </div>
+            <ul>
+                <li>
+                    <a href="pg1.html">
+                        <span class="icon"><i class="fas fa-home"></i></span>
+                        <span class="item">About</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="basictags.html">
+                        <span class="icon"><i class="fas fa-desktop"></i></span>
+                        <span class="item">Basic HTML Tags</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="structure.html">
+                        <span class="icon"><i class="fas fa-user-friends"></i></span>
+                        <span class="item">HTML Structure</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="visuals.html" class="active">
+                        <span class="icon"><i class="fas fa-tachometer-alt"></i></span>
+                        <span class="item">Visual content in HTML</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="tables.html">
+                        <span class="icon"><i class="fas fa-database"></i></span>
+                        <span class="item">HTML tables</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="forms.html">
+                        <span class="icon"><i class="fas fa-chart-line"></i></span>
+                        <span class="item">HTML Forms</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="endc.html">
+                        <span class="icon"><i class="fas fa-user-shield"></i></span>
+                        <span class="item">end course</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="nextc.html">
+                        <span class="icon"><i class="fas fa-cog"></i></span>
+                        <span class="item">What's next</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        var hamburger = document.querySelector(".hamburger");
+    hamburger.addEventListener("click", function(){
+        document.querySelector("body").classList.toggle("active");
+    })
+    </script>
+</body>
+<footer>
+
+</footer>
+</html>

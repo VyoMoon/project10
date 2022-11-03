@@ -1,0 +1,225 @@
+<html lang="en">
+<head></head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="section">
+            <div class="top_navbar">
+                <div class="hamburger">
+                    <a href="#">
+                        <i class="fas fa-bars"></i>
+                            <img class="menuicon" src="sidebar.png" alt="Menu">
+                    </a>
+                </div>
+            </div>
+            <div class="container">
+                <ul>
+                    <li class="conli"><h1>HTML Forms</h1>
+                        Web forms are a very powerful tool for interacting with users — most commonly they are used for collecting data from users, or allowing them to control a user interface. However, for historical and technical reasons it's not always obvious how to use them to their full potential. In the articles listed below, we'll cover all the essential aspects of Web forms and their structure.
+                    </li>
+                    <li class="conli"><h2>Form Element</h2>
+                        First of all we use the <span class="el"><span class="element">&lt;</span>form<span class="element">&gt;</span></span> tag. Lets look at the example below.
+
+                        <div class="excon">
+                            <code class="codeex">
+                                <span class="element">&lt;</span><span class="tag">form</span> <span class="tag1">action</span>=<span class="tag3">"/handling-form-page"</span>  <span class="tag1">method</span>=<span class="tag3">"post"</span><span class="element">&gt;</span>...<span class="element">&lt;/</span><span class="tag">form</span><span class="element">&gt;</span>
+                                    </code>
+                        </div>
+                        <ol>
+                            <li>
+                        <span class="el"><span class="element">&lt;</span>form<span class="element">&gt;</span></span> Tag simply tells that we are trying to create a form.</li>
+                        <li> <span class="el"><span class="element">&lt;</span>action<span class="element">&gt;</span></span> attribute defines the location (URL) where the form's collected data should be sent when it is submitted.
+                        </li>
+                        <li> <span class="el"><span class="element">&lt;</span>method<span class="element">&gt;</span></span> attribute defines which HTTP method to send the data with (usually <span class="el">get</span> or <span class="el">post</span>)
+                            
+                        </li>
+                    </ol>
+
+                    The last two elements seems pretty strange for you right now but when you'll dig deeper in the web development backend, you'll understand them.
+                    </li>
+                    <li class="conli"><h2>Textarea, Label and Input Elements</h2>
+
+                        <ol>
+                            <li>
+                                The <span class="el"><span class="element">&lt;</span>input<span class="element">&gt;</span></span> HTML element is used to create interactive controls for web-based forms in order to accept data from the user.
+                            </li>
+                            <li>
+                                The <span class="el"><span class="element">&lt;</span>textarea<span class="element">&gt;</span></span> HTML element represents a multi-line plain-text editing control, useful when you want to allow users to enter a sizeable amount of free-form text, for example a comment on a review or feedback form.
+                            </li>
+                            <li>
+                                The <span class="el"><span class="element">&lt;</span>label<span class="element">&gt;</span></span> HTML element represents a caption for an item in a user interface.
+                            </li>
+                        </ol>
+
+                        
+
+                        <div class="excon">
+                            <code class="codeex">
+                                <span class="element">&lt;</span><span class="tag">form</span> <span class="tag1">action</span>=<span class="tag3">"/handling-form-page"</span>  <span class="tag1">method</span>=<span class="tag3">"post"</span><span class="element">&gt;</span><br>
+                                ㅤㅤ<span class="element">&lt;</span><span class="tag">label</span> <span class="tag1">for</span>=<span class="tag3">"name"</span><span class="element">&gt;</span> Your name <span class="element">&lt;/</span><span class="tag">label</span><span class="element">&gt;</span><br>
+                                ㅤㅤ<span class="element">&lt;</span><span class="tag">input</span> <span class="tag1">type</span>=<span class="tag3">"text"</span>  <span class="tag1">id</span>=<span class="tag3">"name"</span> <span class="tag1">name</span>=<span class="tag3">"user_name"</span><span class="element">  /&gt;</span><br>
+                                
+                                <span class="element">&lt;/</span><span class="tag">form</span><span class="element">&gt;</span>
+                                    </code>
+                        </div>
+
+                        Since it's just an example form, submiting any data to it would give an error.
+
+                        <div class="rescon">
+                            <form action="/my-handling-form-page" method="post">
+                                
+                                <label for="name">Your name:</label>
+                                <input type="text" id="name" name="user_name" /><br>
+                            </form>
+                        </div><br>
+
+                        Now lets use the <span class="el"><span class="element">&lt;</span>textarea<span class="element">&gt;</span></span> tag instead of <span class="el"><span class="element">&lt;</span>input<span class="element">&gt;</span></span> and we can submit data with multiple lines.
+
+                        <div class="excon">
+                            <code class="codeex">
+                                <span class="element">&lt;</span><span class="tag">form</span> <span class="tag1">action</span>=<span class="tag3">"/handling-form-page"</span>  <span class="tag1">method</span>=<span class="tag3">"post"</span><span class="element">&gt;</span><br>
+                                ㅤㅤ<span class="element">&lt;</span><span class="tag">label</span> <span class="tag1">for</span>=<span class="tag3">"text"</span><span class="element">&gt;</span> Your text <span class="element">&lt;/</span><span class="tag">label</span><span class="element">&gt;</span><br>
+                                ㅤㅤ<span class="element">&lt;</span><span class="tag">textarea</span> <span class="tag1">id</span>=<span class="tag3">"text"</span> <span class="tag1">name</span>=<span class="tag3">"user_text"</span><span class="element">  /&gt;</span><br>
+                                
+                                <span class="element">&lt;/</span><span class="tag">form</span><span class="element">&gt;</span>
+                                    </code>
+                        </div>
+
+                        <div class="rescon">
+                            <form action="/my-handling-form-page" method="post">
+                                
+                                <label for="text">Your text:ㅤ</label>
+                                <textarea id="text" name="user_text"></textarea>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="conli"><h2>Button</h2>
+                        The markup for our form is almost complete; we just need to add a button to allow the user to send, or "submit", their data once they have filled out the form. This is done by using the <span class="el"><span class="element">&lt;</span>button<span class="element">&gt;</span></span> element. <br><br>
+                        The <span class="el"><span class="element">&lt;</span>button<span class="element">&gt;</span></span> element also accepts a type attribute — this accepts one of three values: <span class="el">submit</span>, <span class="el">reset</span>, or <span class="el">button</span>.<br>
+
+                        <ol>
+                            <li>
+                                A click on a <span class="el">submit</span> button (the default value) sends the form's data to the web page defined by the <span class="el">action</span> attribute of the <span class="el"><span class="element">&lt;</span>form<span class="element">&gt;</span></span> element.
+                            </li>
+                            <li>
+                                A click on a <span class="el">reset</span> button resets all the form widgets to their default value immediately. From a UX point of view, this is considered bad practice, so you should avoid using this type of button unless you really have a good reason to include one.
+                            </li>
+                            <li>
+                                A click on a <span class="el">button</span> button does nothing! That sounds silly, but it's amazingly useful for building custom buttons — you can define their chosen functionality with JavaScript.
+                            </li>
+                        </ol>
+                        <br>
+
+                        Now lets see this tag in action.
+
+                        <div class="excon">
+                            <code class="codeex">
+                                <span class="element">&lt;</span><span class="tag">form</span> <span class="tag1">action</span>=<span class="tag3">"/handling-form-page"</span>  <span class="tag1">method</span>=<span class="tag3">"post"</span><span class="element">&gt;</span><br>
+                                ㅤㅤ<span class="element">&lt;</span><span class="tag">label</span> <span class="tag1">for</span>=<span class="tag3">"name"</span><span class="element">&gt;</span> Your name <span class="element">&lt;/</span><span class="tag">label</span><span class="element">&gt;</span><br>
+                                ㅤㅤ<span class="element">&lt;</span><span class="tag">input</span> <span class="tag1">type</span>=<span class="tag3">"text"</span>  <span class="tag1">id</span>=<span class="tag3">"name"</span> <span class="tag1">name</span>=<span class="tag3">"user_name"</span><span class="element">  /&gt;</span><br>
+                                ㅤㅤ<span class="element">&lt;</span><span class="tag">button</span> <span class="tag1">type</span>=<span class="tag3">"submit"</span><span class="element">&gt;</span> Submit <span class="element">&lt;/</span><span class="tag">button</span><span class="element">&gt;</span><br>
+                                
+                                <span class="element">&lt;/</span><span class="tag">form</span><span class="element">&gt;</span>
+                                    </code>
+                        </div>
+
+                        <div class="rescon">
+                            <form action="/my-handling-form-page" method="post">
+                                
+                                <label for="name">Your name:</label>
+                                <input type="text" id="name" name="user_name" />
+                                <button type="submit">Submit</button>
+                            </form>
+                        </div><br>
+
+                        Now we can submit the data form our form right to our server but since we don't have one this tag is completly useless. Don't give up though, programming isn't easy and you have alot to learn.
+                    </li>
+                    <li class="conli"><h2>Summary</h2>
+                        This was a small dive into the html forms and i hope you got the main idea of it. Even if you can't use them with your experience right now, understanding it would be useful.
+                    </li>
+
+                </ul>
+
+                <br>
+                    <a class="prevlink" href="tables.html">&lt;&lt;Previuos Course</a>
+
+                <a class="nextlink" href="endc.html">Next Course&gt;&gt;</a>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="profile">
+                <h3>HTML Is Easy</h3>
+               
+            </div>
+            <ul>
+                <li>
+                    <a href="pg1.html">
+                        <span class="icon"><i class="fas fa-home"></i></span>
+                        <span class="item">About</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="basictags.html">
+                        <span class="icon"><i class="fas fa-desktop"></i></span>
+                        <span class="item">Basic HTML Tags</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="structure.html">
+                        <span class="icon"><i class="fas fa-user-friends"></i></span>
+                        <span class="item">HTML Structure</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="visuals.html">
+                        <span class="icon"><i class="fas fa-tachometer-alt"></i></span>
+                        <span class="item">Visual content in HTML</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="tables.html">
+                        <span class="icon"><i class="fas fa-database"></i></span>
+                        <span class="item">HTML tables</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="active">
+                        <span class="icon"><i class="fas fa-chart-line"></i></span>
+                        <span class="item">HTML Forms</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="endc.html">
+                        <span class="icon"><i class="fas fa-user-shield"></i></span>
+                        <span class="item">end course</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="nextc.html">
+                        <span class="icon"><i class="fas fa-cog"></i></span>
+                        <span class="item">What's next</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        var hamburger = document.querySelector(".hamburger");
+    hamburger.addEventListener("click", function(){
+        document.querySelector("body").classList.toggle("active");
+    })
+    </script>
+</body>
+<footer>
+
+</footer>
+</html>

@@ -1,0 +1,119 @@
+<html lang="en">
+<head></head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What's Next</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="section">
+            <div class="top_navbar">
+                <div class="hamburger">
+                    <a href="#">
+                        <i class="fas fa-bars"></i>
+                            <img class="menuicon" src="sidebar.png" alt="Menu">
+                    </a>
+                </div>
+            </div>
+            <div class="container">
+                <ul>
+                    <li class="conli"><h1>What's next</h1>
+                        If you are reading this article, chances are you already read all the modules above and know html basics. This page will contain all the possible ways to continue your study in web development. I will give links to some of the teaching sites/videos i can recommend here.
+                    </li>
+                    <li class="conli"><h2>CSS</h2>
+                        The first thing you should explore after HTML is CSS. You may remember i mentioned this language in some modules before. Basically CSS(Cascading Style Sheets) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML. CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts.
+                        <br><br>
+                        To learn it i would recommend using <a class="conlink" href="https://developer.mozilla.org/ru/docs/Learn/CSS/First_steps">MDN Web Docs</a>. Put in some hard work in you can learn it in a couple weeks.<br><br>
+
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/r1xBCi5SOjw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </li>
+                    <li class="conli"><h2>JavaScript</h2>
+                    To master the FrontEnd web development you should learn JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries. All major web browsers have a dedicated JavaScript engine to execute the code on users' devices.
+                    <br><br>
+                    To learn it i would still recommend <a class="conlink" href="https://developer.mozilla.org/ru/docs/Learn/JavaScript/First_steps">MDN Web Docs</a>. However, JS is a complete programming language and is really hard to learn. Alongside with JS you'll need to learn frameworks that can be used with it, for example: Node.js, React.js.<br><br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/PkZNo7MFNFg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </li>
+                    <li class="conli"><h2>BackEnd</h2>
+                    Visual part of the saide is much easier then its mechanism behind the scenes. However for backend variety of languages is larger. You can use Java, PHP, Python, C# and some more. You should think some before choosing a language because picking your language is really important and difficult.
+                    </li>
+                    <li class="conli"><h3>But overall all you need to do is Practice. Practice makes perfect. Always create something, google something, learn something, write something.</h3></li>
+                </ul>
+                <br><br>
+                <a class="prevlink" href="endc.html">&lt;&lt;Previuos Course</a>
+
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="profile">
+                <h3>HTML Is Easy</h3>
+               
+            </div>
+            <ul>
+                <li>
+                    <a href="pg1.html">
+                        <span class="icon"><i class="fas fa-home"></i></span>
+                        <span class="item">About</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="basictags.html">
+                        <span class="icon"><i class="fas fa-desktop"></i></span>
+                        <span class="item">Basic HTML Tags</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="structure.html">
+                        <span class="icon"><i class="fas fa-user-friends"></i></span>
+                        <span class="item">HTML Structure</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="visuals.html">
+                        <span class="icon"><i class="fas fa-tachometer-alt"></i></span>
+                        <span class="item">Visual content in HTML</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="tables.html">
+                        <span class="icon"><i class="fas fa-database"></i></span>
+                        <span class="item">HTML tables</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="forms.html">
+                        <span class="icon"><i class="fas fa-chart-line"></i></span>
+                        <span class="item">HTML Forms</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="endc.html">
+                        <span class="icon"><i class="fas fa-user-shield"></i></span>
+                        <span class="item">end course</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class = "active">
+                        <span class="icon"><i class="fas fa-cog"></i></span>
+                        <span class="item">What's next</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        var hamburger = document.querySelector(".hamburger");
+    hamburger.addEventListener("click", function(){
+        document.querySelector("body").classList.toggle("active");
+    })
+    </script>
+</body>
+<footer>
+
+</footer>
+</html>

@@ -1,0 +1,165 @@
+<html lang="en">
+<head></head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Last Course</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="section">
+            <div class="top_navbar">
+                <div class="hamburger">
+                    <a href="#">
+                        <i class="fas fa-bars"></i>
+                            <img class="menuicon" src="sidebar.png" alt="Menu">
+                    </a>
+                </div>
+            </div>
+            <div class="container">
+                <ul>
+                    <li class="conli"><h1>Last Course</h1>
+                        Here i want to mention a couple of tags and elements i couldnt mention in the courses earlier but they are useful. This module contains <span class="el"><span class="element">&lt;</span>div<span class="element">&gt;</span></span>, <span class="el"><span class="element">&lt;</span>span<span class="element">&gt;</span></span>, <span class="el"><span class="element">&lt;</span>code<span class="element">&gt;</span></span>, <span class="el">id</span> and <span class="el">class</span> elements.
+                    </li>
+                    <li class="conli"><h2>Class And Id</h2>
+                        <ol>
+                            <li> <span class="el">class</span> is a space-separated list of the classes of the element. Classes allows CSS and JavaScript to select and access specific elements via the class selectors or functions.</li>
+                            <li> <span class="el">id</span> defines a unique identifier which must be unique in the whole document. Its purpose is to identify the element when linking (using a fragment identifier), scripting, or styling (with CSS).</li>
+                        </ol>
+                        <br>
+                        Basially, <span class="el">id</span> and <span class="el">class</span> are doing the same thing but <span class="el">id</span> has higher relevance then <span class="el">class</span>. To explain this, we can use some simple CSS code.
+
+                        <div class="excon">
+                            <code class="codeex">
+                                <span class="element">&lt;</span><span class="tag">style</span><span class="element">&gt;</span><br>
+                                ㅤㅤ<span class="tag3">.class1 {</span><br>
+                                ㅤㅤ<span class="tag1">color:</span> red<span class="tag1">;</span><br>ㅤㅤ<span class="tag3">}</span><br>
+                                ㅤㅤ<span class="tag3">#id1 {</span><br>
+                                ㅤㅤ<span class="tag1">color:</span> green<span class="tag1">;</span><br>ㅤㅤ<span class="tag3">}</span><br>
+                                <span class="element">&lt;/</span><span class="tag">style</span><span class="element">&gt;</span><br><br>
+
+                                <span class="element">&lt;</span><span class="tag">p</span> <span class="tag1">class</span>=<span class="tag3">"class1"</span>  <span class="tag1">id</span>=<span class="tag3">"id1"</span><span class="element">&gt;</span> nuclear bombs <span class="element">&lt;/</span><span class="tag">p</span><span class="element">&gt;</span><br><br>
+                                    </code>
+                        </div>
+
+                        <div class="rescon">
+                            <p class="class1" id="id1">nuclear bombs</p>
+                        </div>
+
+                        In the example above, we created a simple stylesheet which says: elements in <span class="el">class</span> "class1" are red and the elements in <span class="el">id</span> "id1" are green. The element takes both <span class="el">id</span> and <span class="el">class</span> parameters but <span class="el">id</span> parameter stands off because it has more relevance.
+
+
+                    </li>
+                    <li class="conli"><h2>Div</h2>
+                        The <span class="el"><span class="element">&lt;</span>div<span class="element">&gt;</span></span> HTML element is the generic container for flow content. It has no effect on the content or layout until styled in some way using CSS. As a "pure" container, the <span class="el"><span class="element">&lt;</span>div<span class="element">&gt;</span></span> element does not inherently represent anything. Instead, it's used to group content so it can be easily styled using the <span class="el">class</span> or <span class="el">id</span> attributes.
+
+                        <div class="excon">
+                            <code class="codeex">
+                                <span class="element">&lt;</span><span class="tag">div</span> <span class="tag1">class</span>=<span class="tag3">"someclass"</span><span class="element">&gt;</span><br>
+                                Some text.<br>
+                                <span class="element">&lt;/</span><span class="tag">div</span><span class="element">&gt;</span><br><br>
+                                    </code>
+                        </div>
+
+                    </li>
+
+                    <li class="conli"><h2>Span</h2>
+                        <span class="el"><span class="element">&lt;</span>span<span class="element">&gt;</span></span> is very much like a <span class="el"><span class="element">&lt;</span>div<span class="element">&gt;</span></span> element, but <span class="el"><span class="element">&lt;</span>div<span class="element">&gt;</span></span> is a block-level element whereas a <span class="el"><span class="element">&lt;</span>span<span class="element">&gt;</span></span> is an inline element. But overall they are doing the same purpose.
+                    </li>
+
+                    <li class="conli"><h2>Code</h2>
+                        The <span class="el"><span class="element">&lt;</span>code<span class="element">&gt;</span></span> HTML element displays its contents styled in a fashion intended to indicate that the text is a short fragment of computer code. By default, the content text is displayed using the user agent's default monospace font.
+
+                        <div class="excon">
+                            <code class="codeex">
+                                <span class="element">&lt;</span><span class="tag">code</span> <span class="tag1">class</span>=<span class="tag3">"someclass"</span><span class="element">&gt;</span><br>
+                                print("Balls")<br>
+                                <span class="element">&lt;/</span><span class="tag">code</span><span class="element">&gt;</span><br><br>
+                                    </code>
+                        </div>
+
+                        <div class="rescon">
+                            <code class="dfont">print("Balls")</code>
+                        </div>
+                    </li>
+                </ul>
+
+
+                <br>
+                    <a class="prevlink" href="forms.html">&lt;&lt;Previuos Course</a>
+
+                <a class="nextlink" href="nextc.html">Next Course&gt;&gt;</a>
+        </div>
+        <div class="sidebar">
+            <div class="profile">
+                <h3>HTML Is Easy</h3>
+               
+            </div>
+            <ul>
+                <li>
+                    <a href="pg1.html">
+                        <span class="icon"><i class="fas fa-home"></i></span>
+                        <span class="item">About</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="basictags.html">
+                        <span class="icon"><i class="fas fa-desktop"></i></span>
+                        <span class="item">Basic HTML Tags</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="structure.html">
+                        <span class="icon"><i class="fas fa-user-friends"></i></span>
+                        <span class="item">HTML Structure</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="visuals.html">
+                        <span class="icon"><i class="fas fa-tachometer-alt"></i></span>
+                        <span class="item">Visual content in HTML</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="tables.html">
+                        <span class="icon"><i class="fas fa-database"></i></span>
+                        <span class="item">HTML tables</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="forms.html">
+                        <span class="icon"><i class="fas fa-chart-line"></i></span>
+                        <span class="item">HTML Forms</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="active">
+                        <span class="icon"><i class="fas fa-user-shield"></i></span>
+                        <span class="item">end course</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="nextc.html">
+                        <span class="icon"><i class="fas fa-cog"></i></span>
+                        <span class="item">What's next</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        var hamburger = document.querySelector(".hamburger");
+    hamburger.addEventListener("click", function(){
+        document.querySelector("body").classList.toggle("active");
+    })
+    </script>
+</body>
+<footer>
+
+</footer>
+</html>

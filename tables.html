@@ -1,0 +1,221 @@
+<html lang="en">
+<head></head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="section">
+            <div class="top_navbar">
+                <div class="hamburger">
+                    <a href="#">
+                        <i class="fas fa-bars"></i>
+                            <img class="menuicon" src="sidebar.png" alt="Menu">
+                    </a>
+                </div>
+            </div>
+            <div class="container">
+                <ul>
+                    <li class="conli"><h1>Tables</h1>
+                        A very common task in HTML is structuring tabular data, and it has a number of elements and attributes for just this purpose. Coupled with a little CSS for styling, HTML makes it easy to display tables of information on the web such as your school lesson plan, the timetable at your local swimming pool, or statistics about your favorite dinosaurs or football team. This module takes you through all you need to know about structuring tabular data using HTML.
+                    </li>
+                    <li class="conli"><h2>What is table?</h2>
+                        A table is a structured set of data made up of rows and columns (tabular data). A table allows you to quickly and easily look up values that indicate some kind of connection between different types of data, for example a person and their age, or a day of the week, or the timetable for a local swimming pool.
+                        <br><br>
+                        <img src="https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics/numbers-table.png">
+                    </li>
+                    <li class="conli"><h2>Structure Of The Table</h2>
+                        All the table content we should put inside the <span class="el"><span class="element">&lt;</span>table<span class="element">&gt;</span></span> tag. Just like <span class="el"><span class="element">&lt;</span>body<span class="element">&gt;</span></span> tag for all visible content we use <span class="el"><span class="element">&lt;</span>table<span class="element">&gt;</span></span> for all tabular data inside it.
+                        Then we use <span class="el"><span class="element">&lt;</span>tr<span class="element">&gt;</span></span> (stands for table row) tag and inside <span class="el"><span class="element">&lt;</span>tr<span class="element">&gt;</span></span> we use <span class="el"><span class="element">&lt;</span>td<span class="element">&gt;</span></span> (stands for table data). This works similar to <span class="el"><span class="element">&lt;</span>ul<span class="element">&gt;</span></span> and <span class="el"><span class="element">&lt;</span>li<span class="element">&gt;</span></span> structure.
+                    
+                        <div class="excon">
+                            <code class="codeex">
+                                <span class="element">&lt;</span><span class="tag">table</span><span class="element">&gt;</span></span><br>
+                                ㅤㅤ<span class="element">&lt;</span><span class="tag">tr</span><span class="element">&gt;</span></span><br>
+                                
+                                ㅤㅤㅤㅤ<span class="element">&lt;</span><span class="tag">td</span><span class="element">&gt;</span></span>I am the firt cell<span class="element">&lt;/</span><span class="tag">td</span><span class="element">&gt;</span></span><br>
+
+                                ㅤㅤㅤㅤ<span class="element">&lt;</span><span class="tag">td</span><span class="element">&gt;</span></span>I am the second cell<span class="element">&lt;/</span><span class="tag">td</span><span class="element">&gt;</span></span><br>
+
+                                ㅤㅤㅤㅤ<span class="element">&lt;</span><span class="tag">td</span><span class="element">&gt;</span></span>I am the third cell<span class="element">&lt;/</span><span class="tag">td</span><span class="element">&gt;</span></span><br>
+
+                                ㅤㅤ<span class="element">&lt;/</span><span class="tag">tr</span><span class="element">&gt;</span></span><br>
+                                ㅤㅤ<span class="element">&lt;</span><span class="tag">tr</span><span class="element">&gt;</span></span><br>
+                                
+                                ㅤㅤㅤㅤ<span class="element">&lt;</span><span class="tag">td</span><span class="element">&gt;</span></span>I am the firt cell, second row<span class="element">&lt;/</span><span class="tag">td</span><span class="element">&gt;</span></span><br>
+
+                                ㅤㅤㅤㅤ<span class="element">&lt;</span><span class="tag">td</span><span class="element">&gt;</span></span>I am the second cell, second row<span class="element">&lt;/</span><span class="tag">td</span><span class="element">&gt;</span></span><br>
+
+                                ㅤㅤㅤㅤ<span class="element">&lt;</span><span class="tag">td</span><span class="element">&gt;</span></span>I am the third cell, second row<span class="element">&lt;/</span><span class="tag">td</span><span class="element">&gt;</span></span><br>
+
+                                ㅤㅤ<span class="element">&lt;/</span><span class="tag">tr</span><span class="element">&gt;</span></span><br>
+                                <span class="element">&lt;/</span><span class="tag">table</span><span class="element">&gt;</span></span>
+                                    </code>
+                        </div>
+                        I used a some CSS to make black borders and separate the data. Without CSS it would be unreadable and look like some texts with texts under it.
+                        <div class="rescon">
+                            <table>
+                                <tr>
+                                    <td class="dfont">I am the first cell</td><td class="dfont">I am the second cell</td><td class="dfont">I am the third cell</td>
+                                </tr>
+                                <tr>
+                                    <td class="dfont">I am the first cell, second row</td>
+                                    <td class="dfont">I am the second cell, second row</td>
+                                    <td class="dfont">I am the third cell, second row</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </li>
+                    <li class="conli"> <h2>Table Headers</h2>
+                        Now let's turn our attention to table headers — special cells that go at the start of a row or column and define the type of data that row or column contains. We use <span class="el"><span class="element">&lt;</span>th<span class="element">&gt;</span></span> to use them. Lets add <span class="el"><span class="element">&lt;</span>th<span class="element">&gt;</span></span>s to our example above.
+
+                        <div class="excon">
+                            <code class="codeex">
+                                <span class="element">&lt;</span><span class="tag">table</span><span class="element">&gt;</span></span><br>
+                                ㅤㅤ<span class="element">&lt;</span><span class="tag">tr</span><span class="element">&gt;</span></span><br>
+                                
+                                ㅤㅤㅤㅤ<span class="element">&lt;</span><span class="tag">th</span><span class="element">&gt;</span></span>I am the firt Row Header<span class="element">&lt;/</span><span class="tag">th</span><span class="element">&gt;</span></span><br>
+
+                                ㅤㅤㅤㅤ<span class="element">&lt;</span><span class="tag">td</span><span class="element">&gt;</span></span>I am the firt cell<span class="element">&lt;/</span><span class="tag">td</span><span class="element">&gt;</span></span><br>
+
+                                ㅤㅤㅤㅤ<span class="element">&lt;</span><span class="tag">td</span><span class="element">&gt;</span></span>I am the second cell<span class="element">&lt;/</span><span class="tag">td</span><span class="element">&gt;</span></span><br>
+
+                                ㅤㅤㅤㅤ<span class="element">&lt;</span><span class="tag">td</span><span class="element">&gt;</span></span>I am the third cell<span class="element">&lt;/</span><span class="tag">td</span><span class="element">&gt;</span></span><br>
+
+                                ㅤㅤ<span class="element">&lt;/</span><span class="tag">tr</span><span class="element">&gt;</span></span><br>
+                                ㅤㅤ<span class="element">&lt;</span><span class="tag">tr</span><span class="element">&gt;</span></span><br>
+                                
+                                ㅤㅤㅤㅤ<span class="element">&lt;</span><span class="tag">th</span><span class="element">&gt;</span></span>I am the second Row Header<span class="element">&lt;/</span><span class="tag">th</span><span class="element">&gt;</span></span><br>
+
+                                ㅤㅤㅤㅤ<span class="element">&lt;</span><span class="tag">td</span><span class="element">&gt;</span></span>I am the firt cell, second row<span class="element">&lt;/</span><span class="tag">td</span><span class="element">&gt;</span></span><br>
+
+                                ㅤㅤㅤㅤ<span class="element">&lt;</span><span class="tag">td</span><span class="element">&gt;</span></span>I am the second cell, second row<span class="element">&lt;/</span><span class="tag">td</span><span class="element">&gt;</span></span><br>
+
+                                ㅤㅤㅤㅤ<span class="element">&lt;</span><span class="tag">td</span><span class="element">&gt;</span></span>I am the third cell, second row<span class="element">&lt;/</span><span class="tag">td</span><span class="element">&gt;</span></span><br>
+
+                                ㅤㅤ<span class="element">&lt;/</span><span class="tag">tr</span><span class="element">&gt;</span></span><br>
+                                <span class="element">&lt;/</span><span class="tag">table</span><span class="element">&gt;</span></span>
+                                    </code>
+                        </div>
+                        
+                        <div class="rescon">
+                            <table>
+                                <tr>
+                                    <th class="dfont">I am the firt Row Header</th>
+                                    <td class="dfont">I am the first cell</td>
+                                    <td class="dfont">I am the second cell</td>
+                                    <td class="dfont">I am the third cell</td>
+                                </tr>
+                                <tr>
+                                    <th class="dfont">I am the second Row Header</th>
+                                    <td class="dfont">I am the first cell, second row</td>
+                                    <td class="dfont">I am the second cell, second row</td>
+                                    <td class="dfont">I am the third cell, second row</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        As you see, the header will get bolder font and appear in the center of the cell. You can use it to make table understaning much easier.<br>
+                        <br>
+                        You can also create tables with different amount of cells in rows.
+                        <div class="rescon">
+                            <table>
+                                <tr>
+                                    <th class="dfont">I am the firt Row Header</th>
+                                    <td class="tablex">I am the first cell</td>
+                                </tr>
+                                <tr>
+                                    <th class="dfont">I am the second Row Header</th>
+                                    <td class="dfont">I am the first cell, second row</td>
+                                    <td class="dfont">I am the second cell, second row</td>
+                                    <td class="dfont">I am the third cell, second row</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </li>
+
+                    <li class="conli"><h2>Summary</h2>
+                        That just about wraps up the basics of HTML tables but without this information it will be hard for you to understand how tables work in html.
+                    </li>
+                </ul>
+                <br>
+                    <a class="prevlink" href="visuals.html">&lt;&lt;Previuos Course</a>
+
+                <a class="nextlink" href="forms.html">Next Course&gt;&gt;</a>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="profile">
+                <h3>HTML Is Easy</h3>
+               
+            </div>
+            <ul>
+                <li>
+                    <a href="pg1.html">
+                        <span class="icon"><i class="fas fa-home"></i></span>
+                        <span class="item">About</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="basictags.html">
+                        <span class="icon"><i class="fas fa-desktop"></i></span>
+                        <span class="item">Basic HTML Tags</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="structure.html">
+                        <span class="icon"><i class="fas fa-user-friends"></i></span>
+                        <span class="item">HTML Structure</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="visuals.html">
+                        <span class="icon"><i class="fas fa-tachometer-alt"></i></span>
+                        <span class="item">Visual content in HTML</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="active">
+                        <span class="icon"><i class="fas fa-database"></i></span>
+                        <span class="item">HTML tables</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="forms.html">
+                        <span class="icon"><i class="fas fa-chart-line"></i></span>
+                        <span class="item">HTML Forms</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="endc.html">
+                        <span class="icon"><i class="fas fa-user-shield"></i></span>
+                        <span class="item">end course</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="nextc.html">
+                        <span class="icon"><i class="fas fa-cog"></i></span>
+                        <span class="item">What's next</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        var hamburger = document.querySelector(".hamburger");
+    hamburger.addEventListener("click", function(){
+        document.querySelector("body").classList.toggle("active");
+    })
+    </script>
+</body>
+<footer>
+
+</footer>
+</html>

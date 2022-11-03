@@ -1,0 +1,190 @@
+<html lang="en">
+<head></head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Structure</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="section">
+            <div class="top_navbar">
+                <div class="hamburger">
+                    <a href="#">
+                        <i class="fas fa-bars"></i>
+                            <img class="menuicon" src="sidebar.png" alt="Menu">
+                    </a>
+                </div>
+            </div>
+            <div class="container">
+                <ul>
+                    <li class="conli"><h1>HTML Structure</h1>
+                     In this article we'll learn the main structure of every website. This course contains the most important: tags html, Body, Head and Footer and some other elements.</li>
+                    <li class="conli"><h2>HTML Tag</h2>
+                        The <span class="el"><span class="element">&lt;</span>html<span class="element">&gt;</span></span> element represents the root (top-level element) of an HTML document, so it is also referred to as the root element. All other elements must be descendants of this element. Basically you'll just cover your whole html document into this tag and add the language element. It should look like this:
+
+                        <div class="excon">
+                            <code class="codeex">
+                                <span class="element">&lt;</span><span class="tag">html </span><span class="tag1">lang</span>=<span class="tag3">"en"</span><span class="element">&gt;</span></span><br>
+                                <span class="tag4">--Your Code Goes Here--</span><br>
+                                <span class="element">&lt;/</span><span class="tag">html</span><span class="element">&gt;</span></span>
+                                    </code>
+                        </div>
+
+                    </li>
+                     <li class="conli"><h2>Head</h2>
+                    The <strong>Head</strong> of an HTML document is the part that is not displayed in the web browser when the page is loaded. It contains information such as the page <span class="el"><span class="element">&lt;</span>title<span class="element">&gt;</span></span>, links to CSS (if you choose to style your HTML content with CSS), links to custom favicons, and other metadata (data about the HTML, such as the author, and important keywords that describe the document). Web browsers use information contained in the head to render the HTML document correctly.
+                <br><br>
+                example of typical <span class="el"><span class="element">&lt;</span>head<span class="element">&gt;</span></span> :
+
+                <div class="excon">
+                    <code class="codeex">
+                        <span class="element">&lt;</span><span class="tag">head</span><span class="element">&gt;</span></span><br>
+                        ㅤㅤ<span class="element">&lt;</span><span class="tag">meta </span><span class="tag1">charset</span>=<span class="tag3">"UTF-8"</span><span class="element">&gt;</span></span><br>
+                        ㅤㅤ<span class="element">&lt;</span><span class="tag">title</span><span class="element">&gt;</span></span>PageTitle<span class="element">&lt;/</span><span class="tag">title</span><span class="element">&gt;</span></span><br>
+                        ㅤㅤ<span class="element">&lt;</span><span class="tag">link </span><span class="tag1">rel</span>=<span class="tag3">"stylesheet" </span><span class="tag1">href</span>=<span class="tag3">"YourCSS.css"</span><span class="element">&gt;</span></span><br>
+                        <span class="element">&lt;/</span><span class="tag">head</span><span class="element">&gt;</span></span>
+                            </code>
+                </div>
+                Now, lets take a look at each element.
+                    <ol>
+                        <li><span class="el"><span class="element">&lt;</span>meta<span class="element">&gt;</span></span> represents Metadata that cannot be represented by other HTML meta-related elements. <span class="el">charset</span> attribute declares the document's character encoding. If the attribute is present, its value must be an ASCII case-insensitive match for the string "utf-8", because UTF-8 is the only valid encoding for HTML5 documents.</li>
+                        <li><span class="el"><span class="element">&lt;</span>title<span class="element">&gt;</span></span> element defines the document's title that is shown in a Browser's title bar or a page's tab. It only contains text; tags within the element are ignored.</li>
+                        <li><span class="el"><span class="element">&lt;</span>link<span class="element">&gt;</span></span> specifies relationships between the current document and an external resource. This element is most commonly used to link to CSS, but is also used to establish site icons (both "favicon" style icons and icons for the home screen and apps on mobile devices) among other things. The <span class="el">rel</span> element tells what type of data the document contains and the <span class="el">href</span> element tells us the documents's url, just like in <span class="el"><span class="element">&lt;</span>a<span class="element">&gt;</span></span> tag</li>
+                    </ol>
+
+                </li>
+                <li class="conli"><h2>Body</h2>
+                    The <span class="el"><span class="element">&lt;</span>body<span class="element">&gt;</span></span> element represents the content of an HTML document. There can be only one <span class="el"><span class="element">&lt;</span>body<span class="element">&gt;</span></span> element in a document. Basically, you put all the visible content here. Here is example:
+
+                    <div class="excon">
+                        <code class="codeex">
+                            <span class="element">&lt;</span><span class="tag">body</span><span class="element">&gt;</span></span><br>
+                            ㅤㅤ<span class="element">&lt;</span><span class="tag">p</span><span class="element">&gt;</span></span>I love oranges<span class="element">&lt;/</span><span class="tag">p</span><span class="element">&gt;</span></span><br>
+                            <span class="element">&lt;/</span><span class="tag">body</span><span class="element">&gt;</span></span>
+                                </code>
+                    </div>
+                </li>
+                <li class="conli"><h2>Footer</h2>
+                    The <span class="el"><span class="element">&lt;</span>footer<span class="element">&gt;</span></span> element represents a footer for its nearest ancestor sectioning content or sectioning root element. A <span class="el"><span class="element">&lt;</span>footer<span class="element">&gt;</span></span> typically contains information about the author of the section, copyright data or links to related documents, for example:
+
+                    <div class="excon">
+                        <code class="codeex">
+                            <span class="element">&lt;</span><span class="tag">footer</span><span class="element">&gt;</span></span><br>
+                            ㅤㅤ<span class="element">&lt;</span><span class="tag">p</span><span class="element">&gt;</span></span>© 2022 Vyo<span class="element">&lt;/</span><span class="tag">p</span><span class="element">&gt;</span></span><br>
+                            <span class="element">&lt;/</span><span class="tag">footer</span><span class="element">&gt;</span></span>
+                                </code>
+                    </div>
+                </li>
+                <li class="conli"><h2>Summary</h2>
+                    Now lets put every element together to get a complete structured website:
+
+                    <div class="excon">
+                        <code class="codeex">
+                            <span class="element">&lt;</span><span class="tag">html </span><span class="tag1">lang</span>=<span class="tag3">"en"</span><span class="element">&gt;</span></span><br>
+                            <br>
+                            ㅤㅤ<span class="element">&lt;</span><span class="tag">head</span><span class="element">&gt;</span></span><br>
+                            ㅤㅤㅤㅤ<span class="element">&lt;</span><span class="tag">meta </span><span class="tag1">charset</span>=<span class="tag3">"UTF-8"</span><span class="element">&gt;</span></span><br>
+                            ㅤㅤㅤㅤ<span class="element">&lt;</span><span class="tag">title</span><span class="element">&gt;</span></span>PageTitle<span class="element">&lt;/</span><span class="tag">title</span><span class="element">&gt;</span></span><br>
+                            ㅤㅤㅤㅤ<span class="element">&lt;</span><span class="tag">link </span><span class="tag1">rel</span>=<span class="tag3">"stylesheet" </span><span class="tag1">href</span>=<span class="tag3">"YourCSS.css"</span><span class="element">&gt;</span></span><br>
+                            ㅤㅤ<span class="element">&lt;/</span><span class="tag">head</span><span class="element">&gt;</span></span><br>
+                            <br>
+                            ㅤㅤ<span class="element">&lt;</span><span class="tag">body</span><span class="element">&gt;</span></span><br>
+                            ㅤㅤㅤㅤ<span class="element">&lt;</span><span class="tag">p</span><span class="element">&gt;</span></span>I love oranges<span class="element">&lt;/</span><span class="tag">p</span><span class="element">&gt;</span></span><br>
+                            ㅤㅤ<span class="element">&lt;/</span><span class="tag">body</span><span class="element">&gt;</span></span><br>
+                            <br>
+                            ㅤㅤ<span class="element">&lt;</span><span class="tag">footer</span><span class="element">&gt;</span></span><br>
+                            ㅤㅤㅤㅤ<span class="element">&lt;</span><span class="tag">p</span><span class="element">&gt;</span></span>© 2022 Vyo<span class="element">&lt;/</span><span class="tag">p</span><span class="element">&gt;</span></span><br>
+                            ㅤㅤ<span class="element">&lt;/</span><span class="tag">footer</span><span class="element">&gt;</span></span><br>
+                            <br>
+                            <span class="element">&lt;/</span><span class="tag">html</span><span class="element">&gt;</span></span>
+                                </code>
+                    </div>
+                    I separated each part of the code for better understanding. I suggest you to check out <a class="conlink" href="CodeExample1.html">live example</a> of this code to see how title element works. Anyway here is small example of output of the code above.
+
+                    <div class="rescon">
+                        <p class="dfont">I love oranges</p>
+                        <footer><p class="dfont">© 2022 Vyo</p></footer>
+                    </div>
+                    This is a really simple and short explanation of how these elements work but i tried to tell the most important thing here.
+                </li>
+                </ul>
+                <br>
+                <a class="prevlink" href="basictags.html">&lt;&lt;Previuos Course</a>
+
+                <a class="nextlink" href="visuals.html">Next Course&gt;&gt;</a>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="profile">
+                <h3>HTML Is Easy</h3>
+               
+            </div>
+            <ul>
+                <li>
+                    <a href="pg1.html">
+                        <span class="icon"><i class="fas fa-home"></i></span>
+                        <span class="item">About</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="basictags.html">
+                        <span class="icon"><i class="fas fa-desktop"></i></span>
+                        <span class="item">Basic HTML Tags</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="active">
+                        <span class="icon"><i class="fas fa-user-friends"></i></span>
+                        <span class="item">HTML Structure</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="visuals.html">
+                        <span class="icon"><i class="fas fa-tachometer-alt"></i></span>
+                        <span class="item">Visual content in HTML</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="tables.html">
+                        <span class="icon"><i class="fas fa-database"></i></span>
+                        <span class="item">HTML tables</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="forms.html">
+                        <span class="icon"><i class="fas fa-chart-line"></i></span>
+                        <span class="item">HTML Forms</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="endc.html">
+                        <span class="icon"><i class="fas fa-user-shield"></i></span>
+                        <span class="item">end course</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="nextc.html">
+                        <span class="icon"><i class="fas fa-cog"></i></span>
+                        <span class="item">What's next</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        var hamburger = document.querySelector(".hamburger");
+    hamburger.addEventListener("click", function(){
+        document.querySelector("body").classList.toggle("active");
+    })
+    </script>
+</body>
+<footer>
+
+</footer>
+</html>
